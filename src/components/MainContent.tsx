@@ -11,22 +11,25 @@ import ProfileImage from "./ProfileImage";
 const MainContent = () => {
   const projects = [
     {
-      title: "Bob",
-      description: "Crowdsourced Intelligence, Blockchain-Powered Rewards",
-      image: bobProjectImage,
-      url: "https://bob-v1.vercel.app/",
+      title: "Welth",
+      description: "AI Finance Management Platform, a full-stack web application",
+      image: "public/project1.png",
+      url: "https://welth-ai-finance-platform-sigma.vercel.app/",
+      repo: "https://github.com/rugved0102/welth-AI-Finance-Platform",
     },
     {
-      title: "Ussop",
-      description: "Enterprise ready video conferencing web app",
+      title: "Todo WebApp",
+      description: "using Context API and persistent data storage with localStorage",
       image: ussopProjectImage,
-      url: "https://ussop-nu.vercel.app/",
+      url: "https://rugved0102.github.io/Todo-Context-LocalStorage-webapp/",
+      repo: "https://github.com/rugved0102/Todo-Context-LocalStorage-webapp",
     },
     {
-      title: "Sakhi",
-      description: "True independence starts with a sense safety",
-      image: sakhiProjectImage,
-      url: "https://sakhi-v1.vercel.app/",
+      title: "MegaBlog",
+      description: "blogging platform built with React.js, Vite, and Appwrite",
+      image: "public/project3.jpg",
+      url: "https://github.com/rugved0102/blog-website",
+      // repo: "https://blog-website-penflow.netlify.app/",
     },
   ];
 
@@ -98,6 +101,7 @@ const MainContent = () => {
               description={project.description}
               image={project.image}
               url={project.url}
+              repo={project.repo}
             />
           ))}
         </div>
