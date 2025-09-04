@@ -16,6 +16,8 @@ const Index = () => {
           <div className="lg:col-span-1 space-y-4 lg:space-y-6">
             <LeftSidebar />
             <GitHubStats />
+
+            {/* Spotify Card */}
             <div className="bg-card rounded-xl overflow-hidden">
               <iframe
                 title="Spotify Player"
