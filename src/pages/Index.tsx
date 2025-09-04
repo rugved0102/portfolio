@@ -16,17 +16,15 @@ const Index = () => {
           <div className="lg:col-span-1 space-y-4 lg:space-y-6">
             <LeftSidebar />
             <GitHubStats />
-            {/* Spotify Embed (no auth needed) */}
-            <div className="bg-card rounded-xl p-6">
+            <div className="bg-card rounded-xl overflow-hidden">
               <iframe
                 title="Spotify Player"
-                src="https://open.spotify.com/embed/track/4uLU6hMCjMI75M1A2tKUQC"
+                src="https://open.spotify.com/embed/track/4uLU6hMCjMI75M1A2tKUQC?utm_source=generator&autoplay=1&repeat=1"
                 width="100%"
-                height="80" // 80 = compact; try 152 or 352 for taller cards
-                frameBorder="0"
+                height="80"
+                style={{ border: "none" }} // ✅ removes inner border
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
-                className="rounded-lg"
               ></iframe>
             </div>
 
