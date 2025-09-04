@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import bobProjectImage from "@/assets/bob-project.png";
 import ussopProjectImage from "@/assets/ussop-project.png";
 import sakhiProjectImage from "@/assets/sakhi-project.png";
+import ProfileImage from "./ProfileImage";
 
 const MainContent = () => {
   const projects = [
@@ -34,11 +35,12 @@ const MainContent = () => {
       {/* Top Row: Profile Info */}
       <div className="flex items-center justify-between">
         <div className="flex items-center space-x-4">
-          <img
-            src="https://pbs.twimg.com/profile_images/1905303184111009793/MqSsO-dO_400x400.jpg"
+          {/* <img
+            src="public\rugved_img.jpg"
             alt="Profile"
             className="w-16 h-16 rounded-full"
-          />
+          /> */}
+          <ProfileImage/>
           <div>
             <h1 className="text-3xl font-bold text-foreground">
               Rugved Junghare
@@ -60,7 +62,16 @@ const MainContent = () => {
             Resume
           </Button>
 
-          <Button variant="outline" size="sm">
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={() =>
+              window.open(
+                "https://almondine-ricotta-11a.notion.site/Rugved-Junghare-Proof-of-Work-264f35f91b5b806bbfb9c13ab032c391",
+                "_blank"
+              )
+            }
+          >
             I'm Feeling Lucky
           </Button>
         </div>
@@ -92,107 +103,111 @@ const MainContent = () => {
         </div>
       </div>
 
-        {/* Tech Stack Summary */}
-<div className="bg-card rounded-xl p-4">
-  <h1 className="text-lg font-semibold text-foreground mb-4 text-center">
-    Tech Stack
-  </h1>
+      {/* Tech Stack Summary */}
+      <div className="bg-card rounded-xl p-4">
+        <h1 className="text-xl font-semibold text-foreground mb-4 text-center">
+          Tech Stack
+        </h1>
 
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-    {/* Languages & Web Technologies */}
-    <div>
-      <p className="text-sm font-medium text-muted-foreground mb-2">
-        Languages & Web Technologies
-      </p>
-      <div className="flex flex-wrap gap-1">
-        {[
-          "Java",
-          "JavaScript",
-          // "TypeScript",
-          // "Rust",
-          // "Solidity",
-          // "ReactJS",
-          // "NextJS",
-          // "Remix",
-          "TailwindCSS",
-          // "Socket.io",
-          "Vite",
-          "HTML",
-          "CSS",
-          // "Foundry",
-        ].map((tech) => (
-          <span
-            key={tech}
-            className="bg-secondary text-xs px-2 py-0.5 rounded-md"
-          >
-            {tech}
-          </span>
-        ))}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {/* Languages & Web Technologies */}
+          <div>
+            <p className="text-lg font-medium text-muted-foreground mb-2 pl-2">
+              {" "}
+              Languages & Web Technologies
+            </p>
+            <div className="flex flex-wrap gap-1">
+              {[
+                "Java",
+                "JavaScript",
+                // "TypeScript",
+                // "Rust",
+                // "Solidity",
+                // "ReactJS",
+                // "NextJS",
+                // "Remix",
+                "TailwindCSS",
+                // "Socket.io",
+                "Vite",
+                "HTML",
+                "CSS",
+                // "Foundry",
+              ].map((tech) => (
+                <span
+                  key={tech}
+                  className="bg-secondary text-sm px-2 py-0.5 rounded-md"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* Backend & Tools */}
+          <div>
+            <p className="text-lg font-medium text-muted-foreground mb-2 pl-1">
+              Backend & Tools
+            </p>
+            <div className="flex flex-wrap gap-1">
+              {[
+                "NodeJS",
+                "Express.js",
+                "JWT",
+                "Git",
+                "GitHub",
+                "Docker",
+                // "Nginx",
+                // "Kubernetes",
+                // "Redis",
+                "GitHub Actions",
+                // "Google Cloud",
+                // "AWS",
+                "AppWrite",
+              ].map((tech) => (
+                <span
+                  key={tech}
+                  className="bg-secondary text-xs px-2 py-0.5 rounded-md"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* Databases & Design */}
+          <div>
+            <p className="text-lg font-medium text-muted-foreground mb-2 pl-1">
+              Databases & Design
+            </p>
+            <div className="flex flex-wrap gap-1">
+              {[
+                "PostgreSQL",
+                // "MongoDB",
+                "MySQL",
+                "Prisma",
+                "Figma",
+                "Canva",
+              ].map((tech) => (
+                <span
+                  key={tech}
+                  className="bg-secondary text-xs px-2 py-0.5 rounded-md"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-
-    {/* Backend & Tools */}
-    <div>
-      <p className="text-sm font-medium text-muted-foreground mb-2">
-        Backend & Tools
-      </p>
-      <div className="flex flex-wrap gap-1">
-        {[
-          "NodeJS",
-          "Express.js",
-          "JWT",
-          "Git",
-          "GitHub",
-          "Docker",
-          // "Nginx",
-          // "Kubernetes",
-          // "Redis",
-          "GitHub Actions",
-          // "Google Cloud",
-          // "AWS",
-          "AppWrite",
-        ].map((tech) => (
-          <span
-            key={tech}
-            className="bg-secondary text-xs px-2 py-0.5 rounded-md"
-          >
-            {tech}
-          </span>
-        ))}
-      </div>
-    </div>
-
-    {/* Databases & Design */}
-    <div>
-      <p className="text-sm font-medium text-muted-foreground mb-2">
-        Databases & Design
-      </p>
-      <div className="flex flex-wrap gap-1">
-        {[
-          "PostgreSQL",
-          // "MongoDB",
-          "MySQL",
-          "Prisma",
-          "Figma",
-          "Canva",
-        ].map((tech) => (
-          <span
-            key={tech}
-            className="bg-secondary text-xs px-2 py-0.5 rounded-md"
-          >
-            {tech}
-          </span>
-        ))}
-      </div>
-    </div>
-  </div>
-</div>
-
 
       {/* Bottom Section: Your Next Employee, Skills & Spotify, and Achievements */}
       {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
   
       </div> */}
+      <footer className="bg-card text-center p-2 text-sm text-muted-foreground">
+        © {new Date().getFullYear()} Rugved Junghare · Built with ❤️ using React
+        & Tailwind
+      </footer>
     </div>
   );
 };
