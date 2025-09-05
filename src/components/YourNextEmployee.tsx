@@ -45,7 +45,7 @@ import { Briefcase, Star } from "lucide-react";
 
 const YourNextEmployee = () => {
   return (
-    <div className="bg-card rounded-xl p-4">
+    <div className="bg-card rounded-xl p-3">
       {/* Header */}
       <div className="flex items-center space-x-2 mb-3">
         <Briefcase className="w-4 h-4 text-primary" />
@@ -53,7 +53,7 @@ const YourNextEmployee = () => {
       </div>
 
       {/* Highlights */}
-      <ul className="text-sm text-foreground space-y-2">
+      <ul className="text-sm text-foreground space-y-1">
         <li className="flex items-center gap-2">
           <Star className="w-3 h-3 text-primary fill-current" />
           Ready to contribute from day one
@@ -66,10 +66,10 @@ const YourNextEmployee = () => {
           <Star className="w-3 h-3 text-primary fill-current" />
           Strong problem-solving mindset
         </li>
-        {/* <li className="flex items-center gap-2">
+        <li className="flex items-center gap-2">
           <Star className="w-3 h-3 text-primary fill-current" />
           Team player with leadership potential
-        </li> */}
+        </li>
       </ul>
 
       {/* Compact Tagline */}

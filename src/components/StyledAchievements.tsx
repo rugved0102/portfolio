@@ -29,7 +29,7 @@ const StyledAchievements = () => {
   ];
 
   return (
-    <div className="bg-card rounded-xl p-4">
+    <div className="bg-card rounded-xl p-5">
       <div className="flex items-center space-x-2 mb-3">
         <Trophy className="w-4 h-4 text-primary" />
         <h3 className="text-sm font-semibold text-foreground">Key Achievements</h3>
