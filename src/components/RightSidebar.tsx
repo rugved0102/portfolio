@@ -58,7 +58,7 @@ const RightSidebar = () => {
       </div>
 
       {/* Your Next Employee */}
-        <YourNextEmployee />
+      <YourNextEmployee />
 
       {/* Tech Stack Summary
       <div className="bg-card rounded-xl p-3">

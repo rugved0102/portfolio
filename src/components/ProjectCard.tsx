@@ -4,14 +4,19 @@ interface ProjectCardProps {
   title: string;
   description: string;
   image: string;
-  url: string;      // live project
-  repo?: string;    // GitHub repo
+  url: string; // live project
+  repo?: string; // GitHub repo
 }
 
-const ProjectCard = ({ title, description, image, url, repo }: ProjectCardProps) => {
+const ProjectCard = ({
+  title,
+  description,
+  image,
+  url,
+  repo,
+}: ProjectCardProps) => {
   return (
     <div className="bg-project-card hover:bg-project-card-hover rounded-xl p-4 transition-all duration-300 group">
-      
       {/* Title and Icons */}
       <div className="flex items-center justify-between mb-2">
         <h3 className="text-lg font-bold text-foreground group-hover:text-primary transition-colors">
@@ -42,13 +47,15 @@ const ProjectCard = ({ title, description, image, url, repo }: ProjectCardProps)
       </div>
 
       {/* Description */}
-      <p className="text-muted-foreground text-sm leading-snug mb-3">{description}</p>
+      <p className="text-muted-foreground text-sm leading-snug mb-3">
+        {description}
+      </p>
 
       {/* Project Image */}
       <div className="rounded-lg overflow-hidden">
-        <img 
-          src={image} 
-          alt={title} 
+        <img
+          src={image}
+          alt={title}
           className="w-full h-36 object-cover transition-transform duration-300 group-hover:scale-105"
         />
       </div>
