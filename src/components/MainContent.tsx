@@ -38,7 +38,9 @@ const MainContent = () => {
   return (
     <div className="space-y-6">
       {/* Top Row: Profile Info */}
-      <div className="flex items-center justify-between">
+      {/* <div className="flex items-center justify-between"> */}
+<div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+
         <div className="flex items-center space-x-4">
           {/* <img
             src="public\rugved_img.jpg"
@@ -53,7 +55,7 @@ const MainContent = () => {
             {/* <p className="text-muted-foreground">@rugved_junghare_</p> */}
           </div>
         </div>
-        <div className="flex space-x-3">
+        <div className="flex flex-wrap gap-3">
           <Button
             variant="secondary"
             size="sm"
@@ -95,7 +97,7 @@ const MainContent = () => {
         <h2 className="text-xl font-semibold text-foreground mb-4">
           Featured Projects
         </h2>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {projects.map((project) => (
             <ProjectCard
               key={project.title}
@@ -110,7 +112,7 @@ const MainContent = () => {
       </div>
 
       {/* Tech Stack Summary */}
-      <div className="bg-card rounded-xl p-4">
+      <div className="bg-card rounded-xl p-1 sm:p-3">
         <h1 className="text-xl font-semibold text-foreground mb-4 text-center">
           Tech Stack
         </h1>
@@ -141,7 +143,7 @@ const MainContent = () => {
               ].map((tech) => (
                 <span
                   key={tech}
-                  className="bg-secondary text-sm px-2 py-0.5 rounded-md"
+                  className="bg-secondary text-xs px-2 py-0.5 rounded-md"
                 >
                   {tech}
                 </span>
@@ -210,7 +212,7 @@ const MainContent = () => {
       {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
   
       </div> */}
-      <footer className="bg-card text-center p-2 text-sm text-muted-foreground">
+      <footer className="bg-card rounded-xl text-center p-4 text-xs sm:text-sm text-muted-foreground">
         © {new Date().getFullYear()} Rugved Junghare · Built with ❤️ using React
         & Tailwind
       </footer>
