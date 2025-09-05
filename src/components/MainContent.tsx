@@ -4,6 +4,8 @@ import YourNextEmployee from "./YourNextEmployee";
 import StyledAchievements from "./StyledAchievements";
 import { Button } from "@/components/ui/button";
 import bobProjectImage from "@/assets/bob-project.png";
+import Project1Img from "@/assets/project1.png";
+import Project3Img from "@/assets/project3.jpg";
 import ussopProjectImage from "@/assets/ussop-project.png";
 import sakhiProjectImage from "@/assets/sakhi-project.png";
 import ProfileImage from "./ProfileImage";
@@ -13,7 +15,7 @@ const MainContent = () => {
     {
       title: "Welth",
       description: "AI Finance Management Platform, a full-stack web application",
-      image: "public/project1.png",
+      image: Project1Img,
       url: "https://welth-ai-finance-platform-sigma.vercel.app/",
       repo: "https://github.com/rugved0102/welth-AI-Finance-Platform",
     },
@@ -27,7 +29,7 @@ const MainContent = () => {
     {
       title: "MegaBlog",
       description: "blogging platform built with React.js, Vite, and Appwrite",
-      image: "public/project3.jpg",
+      image: Project3Img,
       url: "https://github.com/rugved0102/blog-website",
       // repo: "https://blog-website-penflow.netlify.app/",
     },
