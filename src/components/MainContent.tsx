@@ -61,7 +61,7 @@ const MainContent = () => {
             size="sm"
             onClick={() =>
               window.open(
-                "https://drive.google.com/file/d/16n_LLX0yjEVAIP3cn5CPVKMVpnjM7xyv/view?usp=sharing",
+                "https://drive.google.com/file/d/1pfYGn1SLmXu2tJPsyAMgYBMDBaAkdaM3/view?usp=sharing",
                 "_blank"
               )
             }
